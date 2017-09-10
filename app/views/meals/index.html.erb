@@ -1,9 +1,19 @@
 <h1 class="center">Meals</h1>
+
+<h2 class="center">Starters</h1>
+
 <div class="tables">
-  <% @meals.each do |meal| %>
-    <div class="table meal">
-      <p><%= meal.name %></p>
-      <p><%= number_to_currency(meal.sale_price, unit: '£') %></p>
-    </div>
-  <% end %>
+  <%= render partial: 'meals', locals: { meals: @meals.starters } %>
+</div>
+
+<h2 class="center">Mains</h1>
+
+<div class="tables">
+  <%= render partial: 'meals', locals: { meals: @meals.mains } %>
+</div>
+
+<h2 class="center">Desserts</h1>
+
+<div class="tables">
+  <%= render partial: 'meals', locals: { meals: @meals.desserts } %>
 </div>
