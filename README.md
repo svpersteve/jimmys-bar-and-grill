@@ -1,24 +1,28 @@
-# README
+## Orders
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Has one table
 
-Things you may want to cover:
+* Has meals
 
-* Ruby version
+* Belongs to a user
 
-* System dependencies
+## Meals
 
-* Configuration
+* Name
 
-* Database creation
+* Category (starter, main, dessert)
 
-* Database initialization
+## Employees
 
-* How to run the test suite
+* Has many orders
 
-* Services (job queues, cache servers, search engines, etc.)
+## Tables
 
-* Deployment instructions
+* Has many orders
 
-* ...
+## So I’d start with
+
+* Employees
+* Tables
+* Meals
+* Orders
