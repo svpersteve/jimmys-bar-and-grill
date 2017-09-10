@@ -1,0 +1,11 @@
+<h1 class="center">Orders</h1>
+<div class="tables">
+  <% @orders.each do |order| %>
+    <div class="table">
+      <%= order.number %>
+      <% order.meals.each do |meal| %>
+        <p><%= meal.name %></p>
+      <% end %>
+    </div>
+  <% end %>
+</div>
