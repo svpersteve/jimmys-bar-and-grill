@@ -1,0 +1,9 @@
+<h1 class="center">Meals</h1>
+<div class="tables">
+  <% @meals.each do |meal| %>
+    <div class="table meal">
+      <p><%= meal.name %></p>
+      <p><%= number_to_currency(meal.sale_price, unit: '£') %></p>
+    </div>
+  <% end %>
+</div>
