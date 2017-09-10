@@ -24,3 +24,30 @@ a {
 .center {
   text-align: center;
 }
+
+.tables {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.table {
+  padding: 20px;
+  text-align: center;
+  border: solid 1px black;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.table-2 {
+  width: 80px;
+}
+
+.table-4 {
+  width: 120px;
+}
+
+.table-6 {
+  width: 160px;
+}
